@@ -221,3 +221,8 @@
 .article__img {
     margin-bottom: 35px;
 }
+
+.article__img--img {
+    width: 320px;
+    height: 176px;
+}

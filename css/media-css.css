@@ -1,0 +1,136 @@
+@media (min-width: 768px) {
+    body {
+        height: 416px;
+    }
+
+    .b-nav__menu {
+        margin: 24px;
+        margin-right: 0;
+    }
+
+    .devider-hidden, .b-nav__hidden {
+        display: block;
+    }
+
+    .b-nav__check-status {
+        margin-right: 24px;
+    }
+
+    .b-nav__call {
+        background: #FF3E79 url("../img/icons/svg/call-icon.svg") no-repeat center;
+        margin-right: 16px;
+    }
+
+    .b-nav__chat {
+        background: #FF3E79 url("../img/icons/svg/chat-icon.svg") no-repeat center;
+        margin-right: 16px;
+    }
+
+    .b-nav__profile {
+        background: #FF3E79 url("../img/icons/svg/profile-icon.svg") no-repeat center;
+    }
+
+    .title {
+        padding-bottom: 32px;
+        padding-left: 24px;
+    }
+
+    .section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .b-menu {
+        margin: 0 24px;
+    }
+
+    .article__read-more {
+        margin-left: 25px;
+    }
+
+    .article__text {
+        margin: 32px 48px 10px 24px;
+        height: 160px;
+    }
+
+    .article__paragraf {
+        line-height: 20px;
+    }
+
+    .article__img {
+        margin: 32px 24px 0 0;
+    }
+
+    .article__img--img {
+        border-radius: 6px;
+        width: 360px;
+        height: 208px;
+    }
+}
+
+@media (min-width: 1120px) {
+    body {
+        max-width: 1170px;
+    }
+
+    .b-nav__hidden, .b-nav__menu, .b-nav__logo, .devider, .devider-hidden {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: inherit;
+    }
+
+    .title {
+        padding: 42px 0 8px 32px;
+    }
+
+    .b-nav {
+        justify-content: flex-end;
+    }
+
+    .button {
+        width: auto;
+        padding: 0 48px 0 8px;
+        margin: 42px 24px 8px 0;
+        background-color: unset;
+    }
+
+    .b-nav__repair {
+        background-position:  right;
+    }
+
+    .b-nav__check-status {
+        background-position: right;
+    }
+
+    .button__text {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-family: 'TT Lakes';
+        font-weight: 500;
+    }
+
+    .b-menu {
+        overflow: unset;
+        flex-wrap: wrap;
+    }
+
+    .article__text {
+        margin: 12px 36px 6px 34px;
+    }
+
+    .article__img {
+        margin: 2px 28px 0 0;
+    }
+
+    .article__img--img {
+        width: 531px;
+        height: 307px;
+    }
+}

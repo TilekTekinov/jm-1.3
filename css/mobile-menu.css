@@ -42,8 +42,8 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     width: 320px;
-    height: 100%;
-    position: fixed;
+    min-height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -157,6 +157,10 @@ body {
     height: 32px;
     width: 8px;
     left: -24px;
+}
+
+.mobile-menu__footer {
+    margin-top: 20px;
 }
 
 .mobile-menu__call {

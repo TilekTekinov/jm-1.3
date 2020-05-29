@@ -8,7 +8,8 @@
         margin-right: 0;
     }
 
-    .devider-hidden, .b-nav__hidden {
+    .devider-hidden,
+    .b-nav__hidden {
         display: block;
     }
 
@@ -73,7 +74,11 @@
         max-width: 1170px;
     }
 
-    .b-nav__hidden, .b-nav__menu, .b-nav__logo, .devider, .devider-hidden {
+    .b-nav__hidden,
+    .b-nav__menu,
+    .b-nav__logo,
+    .devider,
+    .devider-hidden {
         display: none;
     }
 
@@ -100,7 +105,7 @@
     }
 
     .b-nav__repair {
-        background-position:  right;
+        background-position: right;
     }
 
     .b-nav__check-status {

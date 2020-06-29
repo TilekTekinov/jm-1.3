@@ -18,7 +18,7 @@ $(document).ready(function () {
             // loopedSlides: true,
             slidesPerView: 1,
             slidesOffsetAfter: 0,
-            width: 240,
+            width: 256,
             setWrapperSize: true,
             spaceBetween: 16,
             grabCurcor: true,

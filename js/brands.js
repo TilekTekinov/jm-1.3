@@ -1,21 +1,32 @@
-$(document).ready(function () {
-    const breakpoint = window.matchMedia( '(min-width: 1367px)' );
+function showMore(btn) {
+    var swiper = document.querySelector('.swiper-container');
+    if (swiper.classList.contains('swiper-container--height')) {
+        swiper.classList.remove('swiper-container--height');
+        btn.innerHTML = 'Скрыть';
+        btn.classList.add('show-more--full');
+        btn.classList.remove('show-more');
+    } else {
+        swiper.classList.add('swiper-container--height');
+        btn.innerHTML = 'Показать все';
+        btn.classList.add('show-more');
+        btn.classList.remove('show-more--full');
+    }
+}
 
+$(document).ready(function () {
+    const breakpoint = window.matchMedia( '(min-width: 768px)' );
     var mySwiper;
 
     const breakpointChecker = function() {
         if ( breakpoint.matches === true ) {
-            console.log('destroy')
             if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
             return;
         } else if ( breakpoint.matches === false ) return enableSwiper();
     };
 
     const enableSwiper = function() {
-        console.log("enable")
         mySwiper = new Swiper ('.swiper-container', {
             loop: true,
-            // loopedSlides: true,
             slidesPerView: 1,
             slidesOffsetAfter: 0,
             width: 256,
@@ -32,5 +43,5 @@ $(document).ready(function () {
     };
 
     breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
+    breakpointChecker();    
 });

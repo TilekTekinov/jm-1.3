@@ -1,19 +1,19 @@
 function showMore(btn) {
     var swiper = document.querySelector('.swiper-container');
-    if (swiper.classList.contains('swiper-container--height')) {
-        swiper.classList.remove('swiper-container--height');
+    if (!swiper.classList.contains('swiper-container--height')) {
+        swiper.classList.add('swiper-container--height');
         btn.innerHTML = 'Скрыть';
         btn.classList.add('show-more--full');
         btn.classList.remove('show-more');
     } else {
-        swiper.classList.add('swiper-container--height');
+        swiper.classList.remove('swiper-container--height');
         btn.innerHTML = 'Показать все';
         btn.classList.add('show-more');
         btn.classList.remove('show-more--full');
     }
 }
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", () => {
     const breakpoint = window.matchMedia( '(min-width: 768px)' );
     var mySwiper;
 

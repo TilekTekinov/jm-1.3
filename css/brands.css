@@ -161,10 +161,11 @@
 
     .swiper-container {
         padding-left: 0;
+        height: 200px;
     }
 
     .swiper-container--height {
-        height: 200px;
+        height: auto;
     }    
 
     .swiper-wrapper {
